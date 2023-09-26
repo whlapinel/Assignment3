@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 
 public class Record{
     private String month;
@@ -7,7 +6,6 @@ public class Record{
     private double amountSaved;
     //Declare constructors
     public Record(){}
-
 
     public Record(String monthVar, double startingBalanceVar, double endingBalanceVar)
     {
@@ -18,32 +16,6 @@ public class Record{
         this.amountSaved = monthSaving(); //Amount saved is calculated
     }
 
-
-    //Declare setters
-    public void setMonth(String monthVar){
-        this.month = monthVar;
-
-    }
-    public void setStartingBalance(double startingBalanceVar){
-        this.startingBalance = startingBalanceVar;
-    }
-    public void setEndingBalance(double endingBalanceVar){
-        this.endingBalance = endingBalanceVar;
-    }
-    public void setAmountSaved(){
-        amountSaved = monthSaving();
-    }
-
-    //Declare Getters
-    public String getMonth(){
-        return this.month;
-    }
-    public double getStartingBalance(){
-        return this.startingBalance;
-    }
-    public double getEndingBalance(){
-        return this.endingBalance;
-    }
     public double getAmountSaved(){
         return this.amountSaved;
     }
