@@ -30,7 +30,6 @@ class Main {
         System.out.println("Average monthly Saving was $" + averageMonthlySaving(totalSaved, accountInfo.size()));
 
     }
-
     public static double averageMonthlySaving(double totalSaved, int arrSize) {
         return totalSaved / arrSize;
     }
